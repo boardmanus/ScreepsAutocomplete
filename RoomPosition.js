@@ -10,7 +10,7 @@
  * @class
  * @constructor
  */
-RoomPosition = function(x, y, roomName) { };
+RoomPosition = function (x, y, roomName) { };
 
 RoomPosition.prototype =
 {
@@ -19,21 +19,21 @@ RoomPosition.prototype =
      *
      * @type {string}
      */
-    roomName: "",
+  roomName: '',
 
     /**
      * X position in the room.
      *
      * @type {number}
      */
-    x: 0,
+  x: 0,
 
     /**
      * Y position in the room.
      *
      * @type {number}
      */
-    y: 0,
+  y: 0,
 
     /**
      * Create new ConstructionSite at the specified location.
@@ -44,7 +44,7 @@ RoomPosition.prototype =
      *
      * @return {number|OK|ERR_INVALID_TARGET|ERR_FULL|ERR_INVALID_ARGS|ERR_RCL_NOT_ENOUGH}
      */
-    createConstructionSite: function(structureType) { },
+  createConstructionSite(structureType) { },
 
     /**
      * Create new Flag at the specified location.
@@ -57,7 +57,7 @@ RoomPosition.prototype =
      *
      * @return {string|number|ERR_NAME_EXISTS|ERR_INVALID_ARGS}
      */
-    createFlag: function(name, color, secondaryColor) { },
+  createFlag(name, color, secondaryColor) { },
 
     /**
      * Find an object with the shortest path from the given position.
@@ -78,7 +78,7 @@ RoomPosition.prototype =
 
      * @return {object|null} The closest object if found, null otherwise.
      */
-    findClosestByPath: function(type, opts) { },
+  findClosestByPath(type, opts) { },
 
     /**
      * Find an object with the shortest linear distance from the given position.
@@ -94,7 +94,7 @@ RoomPosition.prototype =
      *
      * @return {object|null} The closest object if found, null otherwise.
      */
-    findClosestByRange: function(type, opts) { },
+  findClosestByRange(type, opts) { },
 
     /**
      * Find all objects in the specified linear range.
@@ -110,7 +110,7 @@ RoomPosition.prototype =
      *
      * @return {array} An array with the objects found.
      */
-    findInRange: function(type, range, opts) { },
+  findInRange(type, range, opts) { },
 
     /**
      * Find an optimal path to the specified position using A* search algorithm.
@@ -134,7 +134,7 @@ RoomPosition.prototype =
                              ...
                          ]
      */
-    findPathTo: function(x, y, opts) { },
+  findPathTo(x, y, opts) { },
 
     /**
      * Get linear direction to the specified position.
@@ -149,7 +149,7 @@ RoomPosition.prototype =
      *
      * @return {number|TOP|TOP_RIGHT|RIGHT|BOTTOM_RIGHT|BOTTOM|BOTTOM_LEFT|LEFT|TOP_LEFT} A number representing one of the direction constants.
      */
-    getDirectionTo: function(x, y) { },
+  getDirectionTo(x, y) { },
 
     /**
      * Get linear range to the specified position.
@@ -164,7 +164,7 @@ RoomPosition.prototype =
      *
      * @return {number} A number of squares to the given position.
      */
-    getRangeTo: function(x, y) { },
+  getRangeTo(x, y) { },
 
     /**
      * Check whether this position is in the given range of another position.
@@ -181,7 +181,7 @@ RoomPosition.prototype =
      *
      * @return {boolean}
      */
-    inRangeTo: function(x, y, range) { },
+  inRangeTo(x, y, range) { },
 
     /**
      * Check whether this position is the same as the specified position.
@@ -196,7 +196,7 @@ RoomPosition.prototype =
      *
      * @return {boolean}
      */
-    isEqualTo: function(x, y) { },
+  isEqualTo(x, y) { },
 
     /**
      * Check whether this position is on the adjacent square to the specified position.
@@ -212,7 +212,7 @@ RoomPosition.prototype =
      *
      * @return {boolean}
      */
-    isNearTo: function(x, y) { },
+  isNearTo(x, y) { },
 
     /**
      * Get the list of objects at the specified room position.
@@ -227,7 +227,7 @@ RoomPosition.prototype =
                             { type: 'terrain', terrain: 'swamp' }
                          ]
      */
-    look: function() { },
+  look() { },
 
     /**
      * Get an object with the given type at the specified room position.
@@ -238,5 +238,5 @@ RoomPosition.prototype =
      *
      * @return {array} An array of objects of the given type at the specified position if found.
      */
-    lookFor: function(type) { }
+  lookFor(type) { },
 };

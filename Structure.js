@@ -3,7 +3,7 @@
  * @class
  * @extends {RoomObject}
  */
-Structure = function() { };
+Structure = function () { };
 
 Structure.prototype =
 {
@@ -12,14 +12,14 @@ Structure.prototype =
      *
      * @type {number}
      */
-    hits: 0,
+  hits: 0,
 
     /**
      * The total amount of hit points of the structure.
      *
      * @type {number}
      */
-    hitsMax: 0,
+  hitsMax: 0,
 
     /**
      * A unique object identificator.
@@ -27,14 +27,14 @@ Structure.prototype =
      *
      * @type {string}
      */
-    id: "",
+  id: '',
 
     /**
      * One of the STRUCTURE_* constants.
      *
      * @type {string}
      */
-    structureType: "",
+  structureType: '',
 
     /**
      * Destroy this structure immediately.
@@ -43,7 +43,7 @@ Structure.prototype =
      *
      * @return {number|OK|ERR_NOT_OWNER}
      */
-    destroy: function() { },
+  destroy() { },
 
     /**
      * Check whether this structure can be used.
@@ -54,7 +54,7 @@ Structure.prototype =
      *
      * @return {boolean}
      */
-    isActive: function() { },
+  isActive() { },
 
     /**
      * Toggle auto notification when the structure is under attack.
@@ -67,5 +67,7 @@ Structure.prototype =
      *
      * @return {number|OK|ERR_NOT_OWNER|ERR_INVALID_ARGS}
      */
-    notifyWhenAttacked: function(enabled) { }
+  notifyWhenAttacked(enabled) { },
 };
+
+module.exports = Structure;

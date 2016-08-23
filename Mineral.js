@@ -5,7 +5,7 @@
  * @class
  * @extends {RoomObject}
  */
-Mineral = function() { };
+Mineral = function () { };
 
 Mineral.prototype =
 {
@@ -14,14 +14,14 @@ Mineral.prototype =
      *
      * @type {number}
      */
-    mineralAmount: 0,
+  mineralAmount: 0,
 
     /**
      * The resource type, one of the RESOURCE_* constants.
      *
      * @type {number}
      */
-    mineralType: 0,
+  mineralType: 0,
 
     /**
      * A unique object identificator.
@@ -29,12 +29,14 @@ Mineral.prototype =
      *
      * @type {string}
      */
-    id: "",
+  id: '',
 
     /**
      * The remaining time after which the deposit will be refilled.
      *
      * @type {number}
      */
-    ticksToRegeneration: 0
+  ticksToRegeneration: 0,
 };
+
+module.exports = Mineral;

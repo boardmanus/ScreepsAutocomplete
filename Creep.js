@@ -458,3 +458,5 @@ Creep.prototype =
      */
     withdraw: function(target, resourceType, amount) { }
 };
+
+module.exports = Creep;

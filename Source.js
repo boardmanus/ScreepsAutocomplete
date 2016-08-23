@@ -14,14 +14,14 @@ Source.prototype =
      *
      * @type {number}
      */
-    energy: 0,
+  energy: 0,
 
     /**
      * The total amount of energy in the source.
      *
      * @type {number}
      */
-    energyCapacity: 0,
+  energyCapacity: 3000,
 
     /**
      * A unique object identificator.
@@ -29,12 +29,14 @@ Source.prototype =
      *
      * @type {string}
      */
-    id: "",
+  id: '',
 
     /**
      * The remaining time after which the source will be refilled.
      *
      * @type {number}
      */
-    ticksToRegeneration: 0
+  ticksToRegeneration: 0
 };
+
+module.exports = Source;
